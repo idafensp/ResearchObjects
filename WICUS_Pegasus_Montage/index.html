@@ -48,7 +48,7 @@
         <h3  class="page_title" property="dc:title schema:name"> &bull; Conservation of Computational Scientific Execution Environments for Workflow-based Experiments Using Ontologies</h3>
 <div class="space"> </div>
 <div class="clear"> </div>
-<p>This site contains the experimental materials, as well as theris description, associated to the experimental section of the PhD thesis developed by <a href="http://delicias.dia.fi.upm.es/~isantana/">Idafen Santana-Perez</a>.
+<p>This site contains the experimental materials, as well as their descriptions, associated to the experimental section of the PhD thesis developed by <a href="http://delicias.dia.fi.upm.es/~isantana/">Idafen Santana-Perez</a>.
 
 The content described below is aim to support the claims exposed on it and should not be conisdered as a publication itself.
 <br><br>
@@ -75,9 +75,9 @@ Abstract will be here... </p>
 <h4  class="blue"> Experimental Material</h4>
 <p>
 
-In this section we include the files containing the datasets and the scripts used in the experimentation section of the paper.
+In this section we include the files containing the datasets and the scripts used in the experimentation section of the thesis.
 <br><br>
-All these files are included on the <a href="FGCS2015.zip">FGCS2015.zip</a> bundle. This is the main hierachy of its contents once unzipped:
+All these files are included on the <a href="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/montage.zip">montage.zip</a> bundle. This is the main hierachy of its contents once unzipped:
 <br><br>
 <ul>
 <li> <b>Montage:</b> a folder containing the files related to the Montage workflow use case.
@@ -87,30 +87,15 @@ All these files are included on the <a href="FGCS2015.zip">FGCS2015.zip</a> bund
 		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the Montage workflow.
 		<li> &bull; annotations: a folder containing the three datasets describing the workflow and its requirements.
 	</ul>
-
-<li> <b>Epigenomics:</b> a folder containing the files related to the Epigenomics workflow use case.
-	<ul>
-		<li> &bull; runEpigenomicsAws.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on AWS EC2, deploys the necessary software, and executes the Epigenomics workflow.
-		<li> &bull; runEpigenomicsFG.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on FutureGrid, deploys the necessary software, and executes the Epigenomics workflow.
-		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the Epigenomics workflow.
-		<li> &bull; annotations: a folder containing the three datasets describing the workflow and its requirements.
-	</ul>
-<li> <b>SoyKB:</b> a folder containing the files related to the SoyKB workflow use case.
-	<ul>
-		<li> &bull; runSoyKBAws.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on AWS EC2, deploys the necessary software, and executes the SoyKB workflow.
-		<li> &bull; runSoyKBFG.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on FutureGrid, deploys the necessary software, and executes the SoyKB workflow.
-		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the SoyKB workflow.
-		<li> &bull; annotations: a folder containing the three datasets describing the workflow and its requirements.
-	</ul>
 </ul>
 <br>
 <br>
 
-Each <i>annotations</i> folder contains the following files:
+This <i>annotations</i> folder contains the following files:
 
 <ul>
-<li> <b>Workflow Requirements dataset (wfiConf.ttl):</b> this RDF dataset contains the annotations about the requirements of the corresponding workflow.
-<li> <b>Software Stacks dataset (swc.ttl):</b> an RDF dataset containing the description of the Software Components necessary for executing the described workflow.
+<li> <b>Workflow Requirements dataset (wfiConf.ttl):</b> this RDF dataset contains the annotations about the requirements of the Montage workflow.
+<li> <b>Software Stacks dataset (swc.ttl):</b> an RDF dataset containing the description of the Software Components necessary for executing the Montage workflow.
 <li> <b>Scientific Virtual Appliance dataset (sva.owl):</b> an RDF dataset containing the annotations of the  Scientific Virtual Appliances used in this experimentation.
 </ul>
 
@@ -124,7 +109,9 @@ Each <i>annotations</i> folder contains the following files:
 <h4 class="blue"> Executing it</h4>
 To obtain either the Precip or Vagrant files the Infrastructure Specification Algorithm (ISA) must be executed with the files provided in the bundle.
 <br><br>
-The lastest version of the ISA can be obtained <a href="https://github.com/idafensp/WicusISADemos/tree/master/v.0.3">here</a>. To execute it, follow the instructions inclued on the site, including the files included on the <i>annotations</i> folder of each workflow. The specif parameters of the workflows to be used in this work are:
+The lastest version of the ISA can be obtained <a href="https://github.com/idafensp/WicusISADemos/tree/master/v.1.1">here</a>. 
+    
+    To execute it, follow the instructions included on the site, using the files from the <i>annotations</i> folder of the workflow. The specif parameters of the workflows to be used are:
 <br><br>
 	<ul>
 		<li> &bull; Montage:
@@ -132,7 +119,7 @@ The lastest version of the ISA can be obtained <a href="https://github.com/idafe
 				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/montage_WF.
 				<li> &bull;  SSH_TYPE=rsa;
 			</ul>
-		<li> &bull; Epigenomics:
+<!--		<li> &bull; Epigenomics:
 			<ul>
 				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/genome-dax_WF.
 				<li> &bull;  SSH_TYPE=rsa;
@@ -141,7 +128,7 @@ The lastest version of the ISA can be obtained <a href="https://github.com/idafe
 			<ul>
 				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/soykb_WF.
 				<li> &bull;  SSH_TYPE=dsa;
-			</ul>
+			</ul>-->
 	</ul>
 <br><br>
 Along with the executable jar, a file defining the list of available providers is also provided, as well as the text files containing the invocation sequence for each workflow.
