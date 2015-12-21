@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Conservation of Computational Scientific Execution Environments for Workflow-based Experiments Using Ontologies</title>
+<link rel="stylesheet" href="styles/style.css" media="screen" />
+<link rel="stylesheet" href="styles/media-queries.css" />
+<link rel="stylesheet" href="./flex-slider/flexslider.css" type="text/css" media="screen" />
+<link href="styles/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="styles/tipsy.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="./scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./flex-slider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="scripts/jquery.tipsy.js" type="text/javascript"></script>
+<script src="scripts/jquery.knob.js" type="text/javascript"></script>
+<script type="text/javascript" src="./scripts/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="./scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="./scripts/setup.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</head>
+<body prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/ prov: http://www.w3.org/ns/prov# ore: http://www.openarchives.org/ore/terms/ ro: http://purl.org/wf4ever/ro# rdfs: http://www.w3.org/2000/01/rdf-schema#" resource="" typeOf="ore:Aggregation ro:ResearchObject">
+  <span property="ore:isDescribedBy" resource=""></span>
+  <div id="wrap">
+   <div id="sidebar"> 
+     <ul id="navigation">
+       <li><a href="#home" class="active">Summary</a></li>
+       <li><a href="#abstract">Abstract</a></li>
+       <li><a href="#inputs">Experimental Material</a></li>
+       <li><a href="#exec">Executing it</a></li>
+       <li><a href="#auth">About the authors</a></li>
+     </ul>
+         <div style="bottom:0; position : absolute">
+                 <div style="float: left; padding-left: 25px; width:80px;">
+                 <a href="http://www.researchobject.org/"><img src="images/rologo.png" alt="This page is RO enabled" title="This page is described according to the RO Model" width="60"/></a>
+                 </div>
+                 <div style="float: left; padding-left: 25px; width:80px;">
+                 <img src="images/rdf.gif" alt="This page is described in rdf-a" title="This page is described in rdf-a" width="60"/>
+                 </div>
+         </div>	
+   </div>
+   <div id="container"> 
+     <!-- page container -->
+     <div class="page" id="home"> 
+       <!-- page home -->
+       <div class="page_content">
+        <h3  class="page_title" property="dc:title schema:name"> &bull; Conservation of Computational Scientific Execution Environments for Workflow-based Experiments Using Ontologies</h3>
+<div class="space"> </div>
+<div class="clear"> </div>
+<p>This site contains the experimental materials, as well as their descriptions, associated to the experimental section of the PhD thesis developed by <a href="http://delicias.dia.fi.upm.es/~isantana/">Idafen Santana-Perez</a>.
+
+<br>
+<h1>STILL IN PROGRESS</h1>    
+<br>    
+    
+The content described below is aim to support the claims exposed on it and should not be conisdered as a publication itself.
+<br><br>
+This material is published following the <a href="http://www.researchobject.org/">Research Object</a> specification.
+<br><br>
+
+<i>Last modified: January XX, 2015</i>
+
+</p>
+</div> 
+</div>
+<div class="page" id="abstract">	
+<div class="page_content">
+<h4 class="blue"> Abstract</h4>
+<div class="space"> </div>
+<div class="clear"> </div>
+<p property="dc:abstract">
+Abstract will be here... </p>
+<div class="clear"> </div>
+</div>
+</div>
+<div class="page" id="inputs"> 
+<div class="page_content">
+<h4  class="blue"> Experimental Material</h4>
+<p>
+
+In this section we include the files containing the datasets and the scripts used in the experimentation section of the thesis.
+<br><br>
+All these files are included on the <a href="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/montage.zip">montage.zip</a> bundle. This is the main hierachy of its contents once unzipped:
+<br><br>
+<ul>
+<li> <b>Montage:</b> a folder containing the files related to the Montage workflow use case.
+	<ul>
+		<li> &bull; runMontageAws.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on AWS EC2, deploys the necessary software, and executes the Montage workflow.
+		<li> &bull; runMontageFG.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on FutureGrid, deploys the necessary software, and executes the Montage workflow.
+		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the Montage workflow.
+		<li> &bull; annotations: a folder containing the three datasets describing the workflow and its requirements.
+	</ul>
+</ul>
+<br>
+<br>
+
+This <i>annotations</i> folder contains the following files:
+
+<ul>
+<li> <b>Workflow Requirements dataset (wfiConf.ttl):</b> this RDF dataset contains the annotations about the requirements of the Montage workflow.
+<li> <b>Software Stacks dataset (swc.ttl):</b> an RDF dataset containing the description of the Software Components necessary for executing the Montage workflow.
+<li> <b>Scientific Virtual Appliance dataset (sva.owl):</b> an RDF dataset containing the annotations of the  Scientific Virtual Appliances used in this experimentation.
+</ul>
+
+
+
+</p>
+</div>
+</div>
+<div class="page" id="exec">
+<div class="page_content">
+<h4 class="blue"> Executing it</h4>
+To obtain either the Precip or Vagrant files the Infrastructure Specification Algorithm (ISA) must be executed with the files provided in the bundle.
+<br><br>
+The lastest version of the ISA can be obtained <a href="https://github.com/idafensp/WicusISADemos/tree/master/v.1.1">here</a>. 
+    
+    To execute it, follow the instructions included on the site, using the files from the <i>annotations</i> folder of the workflow. The specif parameters of the workflows to be used are:
+<br><br>
+	<ul>
+		<li> &bull; Montage:
+			<ul>
+				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/montage_WF.
+				<li> &bull;  SSH_TYPE=rsa;
+			</ul>
+<!--		<li> &bull; Epigenomics:
+			<ul>
+				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/genome-dax_WF.
+				<li> &bull;  SSH_TYPE=rsa;
+			</ul>
+		<li> &bull; SoyKB:
+			<ul>
+				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/soykb_WF.
+				<li> &bull;  SSH_TYPE=dsa;
+			</ul>-->
+	</ul>
+<br><br>
+Along with the executable jar, a file defining the list of available providers is also provided, as well as the text files containing the invocation sequence for each workflow.
+<br><br>
+
+To execute the obtained files Precip and/or Vagrant must be installed first. To do so please refer to their correspoing websites:
+<br>
+<ul>
+	<li> &bull; <a href="https://github.com/pegasus-isi/precip">Precip on github</a><br>
+	<li> &bull; <a href="https://www.vagrantup.com/">Vagrant</a><br>
+</ul>
+
+<br>
+For executing it the Precip scripts, either the ones provided on the bundle or the ones obtained by executing the ISA, the following steps must be performed:</p>
+<ul>
+	<li> &bull; Set the PYTHONPATH environment variable to the decompressed precip folder (e.g. "setenv PYTHONPATH $PWD/precip")</li>
+	<li> &bull; Execute on the python scripts included on the zip file:
+	<ul>
+		<li> &bull; FutureGrid instructions:
+			<ul>
+				<li> &bull; Set the OPENSTACK_URL, OPENSTACK_ACCESS_KEY, and OPENSTACK_SECRET_KEY environment variables, indicating the endpoint URL and the access and secret keys of the user on FutureGrid.</li>
+				<li>  &bull; Execute the corresponding file (e.g. "python precipMontageFG.py")</li>
+			</ul>
+		</li>
+		<li> &bull; AWS inctructions:
+			<ul>
+				<li> &bull; Set the AMAZON_EC2_REGION, AMAZON_EC2_URL, AMAZON_EC2_ACCESS_KEY, and AMAZON_EC2_SECRET_KEY environment variables, indicating the AWS region and AWS endpoint to be used, and the access and secret keys of the user on AWS.</li>
+				<li> &bull; Execute the corresponding file (e.g. "python precipMontageAws.py")</li>
+			</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<br>
+
+For executing the vagrant scripts, once in the correspoing directory on the bundle, execute the <i>vagrant up</i> command. This will read the <i>Vagrantfile</i> file to create the environment and execute the workflow.
+
+ 
+</div>
+</div>
+<div class="page" id="auth">
+<!-- page industries -->
+<div class="page_content">
+<h4 class="blue"> About the authors</h4>
+<table>	
+<tr><td style="padding-left:10px"><h3><br>Author</h3><br></td></tr>
+<tr property="schema:creator dc:creator prov:wasAttributedTo" typeOf="foaf:Person"><td style="padding-left:10px" property="foaf:name schema:name"> &bull; Idafen Santana-Perez, (isantana@fi.upm.es) Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain</td></tr>
+<tr><td style="padding-left:10px"><h3><br>Supervisors</h3><br></td></tr>
+<tr property="schema:creator dc:creator prov:wasAttributedTo" typeOf="foaf:Person"><td style="padding-left:10px" property="foaf:name schema:name"> &bull; Oscar Corcho, (ocorcho@fi.upm.es) Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain</td></tr>
+<tr property="schema:creator dc:creator prov:wasAttributedTo" typeOf="foaf:Person"><td style="padding-left:10px" property="foaf:name schema:name"> &bull; Mar&iacute;a P&eacute;rez-Hern&aacute;ndez, (mperez@fi.upm.es) Ontology Engineering Group, Universidad Politécnica de Madrid, Madrid, Spain</td></tr>
+</table>
+<div class="clear"> </div>
+</div>
+</div>
+<div class="page"> 
+<!-- page industries -->	
+<div class="page_content">
+<h4 class="blue">Acknowledgements</h4>
+This material is based upon work supported in part by the National Science Foundation under Grant No. 0910812 to Indiana University for "FutureGrid: An Experimental, High-Performance Grid Test-bed" and the FPU grant from the Spanish Science and Innovation Ministry (MICINN), and the Ministerio de Econom&iacute;a y Competitividad (Spain) project "4V: Volumen, Velocidad, Variedad y Validez en la Gesti&oacute;n Innovadora de Datos" (TIN2013-46238-C4-2-R). We also thank the Pegasus team at ISI for their valuable help.
+<div class="clear"> </div>
+</div> 
+
+<div class="page_bottom"><div class="center"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/88x31.png" /></a><br/>This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic License</a>.
+</div>
+</div>
+</div>
+<a class="gotop hidden" href="#top">Top</a>
+</div>
+</div>
+</body>
+</html>
