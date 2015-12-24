@@ -8,64 +8,70 @@
   xmlns:ro="http://purl.org/wf4ever/ro#"
   xmlns:schema="http://schema.org/"
 >
-  <ro:ResearchObject rdf:about="http://w3id.org/idafensp/ro/wicuspegasusmontage">
+  <ro:ResearchObject rdf:about="http://w3id.org/idafensp/ro/wicuspegasussoykb">
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/annotations"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/annotations"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/add_condor_repo.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/add_condor_repo.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/clean_and_set_condor.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/clean_and_set_condor.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/grantExecPer.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/grantExecPer.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/stageMontageData.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/stageSoftwareBundle.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/user_setup.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/user_setup.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/yumInstall.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/yumInstall.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/add_pegasus_repo.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/add_pegasus_repo.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/copyMontageBinary.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/copyBinary.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/restart_daemons.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/restart_daemons.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/stop_condor.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/stop_condor.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/workflow.sh"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/workflow.sh"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/runMontageAws.py"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/runSoykbAws.py"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/runMontageFG.py"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/runSoykbFG.py"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/Vagrantfile"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/Vagrantfile"/>
     </ore:aggregates>
     <ore:aggregates>
-      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/montage.zip"/>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/soykb.zip"/>
+    </ore:aggregates>
+    <ore:aggregates>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/soybean-workflow.conf"/>
+    </ore:aggregates>
+    <ore:aggregates>
+      <ro:Resource rdf:about="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/datastage.sh"/>
     </ore:aggregates>
 
       
     <dc:creator rdf:resource="http://delicias.dia.fi.upm.es/~isantana#me"/>
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-    <schema:name>Pegasus WMS Montage workflow reproducibility experiment</schema:name>
+    <schema:name>Pegasus WMS SoyKB workflow reproducibility experiment</schema:name>
     <prov:wasAttributedTo rdf:resource="http://delicias.dia.fi.upm.es/~isantana#me"/>
     <schema:creator rdf:resource="http://delicias.dia.fi.upm.es/~isantana#me"/>
     <ore:isDescribedBy>
-      <rdf:Description rdf:about="http://idafensp.github.io/ResearchObjects/WICUS_Pegasus_Montage/">
+      <rdf:Description rdf:about="http://idafensp.github.io/ResearchObjects/WICUS_Pegasus_Soykb/">
         <dc:creator>http://delicias.dia.fi.upm.es/~isantana#me</dc:creator>
         <prov:wasAttributedTo>http://delicias.dia.fi.upm.es/~isantana#me</prov:wasAttributedTo>
         <schema:creator>http://delicias.dia.fi.upm.es/~isantana#me</schema:creator>
