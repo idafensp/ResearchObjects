@@ -4,14 +4,14 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
 
-<http://w3id.org/idafensp/ro/wicuspegasusmontage>
+<http://w3id.org/idafensp/ro/wicuspegasussoykb>
   a <http://purl.org/wf4ever/ro#ResearchObject>, <http://www.openarchives.org/ore/terms/Aggregation> ;
-  ns0:aggregates <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/annotations>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/add_condor_repo.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/clean_and_set_condor.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/grantExecPer.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/stageMontageData.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/user_setup.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/yumInstall.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/add_pegasus_repo.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/copyMontageBinary.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/restart_daemons.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/stop_condor.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/workflow.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/runMontageAws.py>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/runMontageFG.py>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/Vagrantfile>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/montage.zip> ;
+  ns0:aggregates <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/annotations>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/add_condor_repo.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/clean_and_set_condor.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/grantExecPer.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/stageSoftwareBundle.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/user_setup.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/yumInstall.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/add_pegasus_repo.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/copyBinary.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/restart_daemons.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/stop_condor.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/workflow.sh>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/runSoykbAws.py>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/runSoykbFG.py>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/Vagrantfile>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/soykb.zip>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/soybean-workflow.conf>, <http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/datastage.sh> ;
   dc:creator <http://delicias.dia.fi.upm.es/~isantana#me> ;
-  schema:name "Pegasus WMS Montage workflow reproducibility experiment" ;
+  schema:name "Pegasus WMS SoyKB workflow reproducibility experiment" ;
   prov:wasAttributedTo <http://delicias.dia.fi.upm.es/~isantana#me> ;
   schema:creator <http://delicias.dia.fi.upm.es/~isantana#me> ;
-  ns0:isDescribedBy <http://idafensp.github.io/ResearchObjects/WICUS_Pegasus_Montage/> ;
+  ns0:isDescribedBy <http://idafensp.github.io/ResearchObjects/WICUS_Pegasus_Soykb/> ;
   xhv:license <http://creativecommons.org/licenses/by-nc-sa/2.0/> ;
   dc:title "Conservation of Computational Scientific Execution Environments for Workflow-based Experiments Using Ontologies. " ;
   dc:abstract """
@@ -19,23 +19,25 @@ Reproducibility of scientific studies and results is a goal that every scientist
 					
     """ .
 
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/annotations> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/add_condor_repo.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/clean_and_set_condor.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/grantExecPer.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/stageMontageData.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/user_setup.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/yumInstall.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/add_pegasus_repo.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/copyMontageBinary.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/restart_daemons.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/stop_condor.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/workflow.sh> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/runMontageAws.py> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/runMontageFG.py> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/Vagrantfile> a <http://purl.org/wf4ever/ro#Resource> .
-<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/montage.zip> a <http://purl.org/wf4ever/ro#Resource> .
-<http://idafensp.github.io/ResearchObjects/WICUS_Pegasus_Montage/>
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/annotations> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/add_condor_repo.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/clean_and_set_condor.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/grantExecPer.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/stageSoftwareBundle.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/user_setup.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/yumInstall.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/add_pegasus_repo.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/copyBinary.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/restart_daemons.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/stop_condor.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/workflow.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/runSoykbAws.py> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/runSoykbFG.py> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/Vagrantfile> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/soykb.zip> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/soybean-workflow.conf> a <http://purl.org/wf4ever/ro#Resource> .
+<http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/datastage.sh> a <http://purl.org/wf4ever/ro#Resource> .
+<http://idafensp.github.io/ResearchObjects/WICUS_Pegasus_Soykb/>
   dc:creator "http://delicias.dia.fi.upm.es/~isantana#me" ;
   prov:wasAttributedTo "http://delicias.dia.fi.upm.es/~isantana#me" ;
   schema:creator "http://delicias.dia.fi.upm.es/~isantana#me" .
