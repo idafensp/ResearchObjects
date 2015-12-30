@@ -46,21 +46,17 @@
        <!-- page home -->
        <div class="page_content">
         <h3  class="page_title" property="dc:title schema:name"> &bull; Conservation of Computational Scientific Execution Environments for Workflow-based Experiments Using Ontologies</h3><hr>
-        <h3  class="page_title" property="dc:title schema:name"> &bull; Pegasus Montage</h3>
+        <h3  class="page_title" property="dc:title schema:name"> &bull; Pegasus SoyKB</h3>
 <div class="space"> </div>
 <div class="clear"> </div>
 <p>This site contains the experimental materials, as well as their descriptions, associated to the experimental section of the PhD thesis developed by <a href="http://delicias.dia.fi.upm.es/~isantana/">Idafen Santana-Perez</a>.
 
-<br>
-<h1>STILL IN PROGRESS</h1>    
-<br>    
-    
 The content described below is aim to support the claims exposed on it and should not be conisdered as a publication itself.
 <br><br>
 This material is published following the <a href="http://www.researchobject.org/">Research Object</a> specification.
 <br><br>
 
-<i>Last modified: January XX, 2015</i>
+<i>Last modified: December 23, 2015</i>
 
 </p>
 </div> 
@@ -82,14 +78,14 @@ Abstract will be here... </p>
 
 In this section we include the files containing the datasets and the scripts used in the experimentation section of the thesis.
 <br><br>
-All these files are included on the <a href="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/montage.zip">montage.zip</a> bundle. This is the main hierachy of its contents once unzipped:
+All these files are included on the <a href="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Soykb/soykb.zip">soykb.zip</a> bundle. This is the main hierachy of its contents once unzipped:
 <br><br>
 <ul>
-<li> <b>Montage:</b> a folder containing the files related to the Montage workflow use case.
+<li> <b>SoyKB:</b> a folder containing the files related to the SoyKB workflow use case.
 	<ul>
-		<li> &bull; runMontageAws.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on AWS EC2, deploys the necessary software, and executes the Montage workflow.
-		<li> &bull; runMontageFG.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on FutureGrid, deploys the necessary software, and executes the Montage workflow.
-		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the Montage workflow.
+		<li> &bull; runSoykbAws.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on AWS EC2, deploys the necessary software, and executes the SoyKB workflow.
+		<li> &bull; runSoykbFG.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on FutureGrid, deploys the necessary software, and executes the SoyKB workflow.
+		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the SoyKB workflow.
 		<li> &bull; annotations: a folder containing the three datasets describing the workflow and its requirements.
 	</ul>
 </ul>
@@ -99,8 +95,8 @@ All these files are included on the <a href="http://delicias.dia.fi.upm.es/publi
 This <i>annotations</i> folder contains the following files:
 
 <ul>
-<li> <b>Workflow Requirements dataset (wfiConf.ttl):</b> this RDF dataset contains the annotations about the requirements of the Montage workflow.
-<li> <b>Software Stacks dataset (swc.ttl):</b> an RDF dataset containing the description of the Software Components necessary for executing the Montage workflow.
+<li> <b>Workflow Requirements dataset (wfiConf.ttl):</b> this RDF dataset contains the annotations about the requirements of the SoyKB workflow.
+<li> <b>Software Stacks dataset (swc.ttl):</b> an RDF dataset containing the description of the Software Components necessary for executing the SoyKB workflow.
 <li> <b>Scientific Virtual Appliance dataset (sva.owl):</b> an RDF dataset containing the annotations of the  Scientific Virtual Appliances used in this experimentation.
 </ul>
 
@@ -119,21 +115,12 @@ The lastest version of the ISA can be obtained <a href="https://github.com/idafe
     To execute it, follow the instructions included on the site, using the files from the <i>annotations</i> folder of the workflow. The specif parameters of the workflows to be used are:
 <br><br>
 	<ul>
-		<li> &bull; Montage:
-			<ul>
-				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/montage_WF.
-				<li> &bull;  SSH_TYPE=rsa;
-			</ul>
-<!--		<li> &bull; Epigenomics:
-			<ul>
-				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/genome-dax_WF.
-				<li> &bull;  SSH_TYPE=rsa;
-			</ul>
 		<li> &bull; SoyKB:
 			<ul>
 				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/soykb_WF.
 				<li> &bull;  SSH_TYPE=dsa;
-			</ul>-->
+			</ul>
+
 	</ul>
 <br><br>
 Along with the executable jar, a file defining the list of available providers is also provided, as well as the text files containing the invocation sequence for each workflow.
@@ -155,13 +142,13 @@ For executing it the Precip scripts, either the ones provided on the bundle or t
 		<li> &bull; FutureGrid instructions:
 			<ul>
 				<li> &bull; Set the OPENSTACK_URL, OPENSTACK_ACCESS_KEY, and OPENSTACK_SECRET_KEY environment variables, indicating the endpoint URL and the access and secret keys of the user on FutureGrid.</li>
-				<li>  &bull; Execute the corresponding file (e.g. "python precipMontageFG.py")</li>
+				<li>  &bull; Execute the corresponding file (e.g. "python runSoykbFG.py")</li>
 			</ul>
 		</li>
 		<li> &bull; AWS inctructions:
 			<ul>
 				<li> &bull; Set the AMAZON_EC2_REGION, AMAZON_EC2_URL, AMAZON_EC2_ACCESS_KEY, and AMAZON_EC2_SECRET_KEY environment variables, indicating the AWS region and AWS endpoint to be used, and the access and secret keys of the user on AWS.</li>
-				<li> &bull; Execute the corresponding file (e.g. "python precipMontageAws.py")</li>
+				<li> &bull; Execute the corresponding file (e.g. "python runSoykbAws.py")</li>
 			</ul>
 		</li>
 	</ul>
