@@ -48,18 +48,17 @@
         <h3  class="page_title" property="dc:title schema:name"> &bull; Conservation of Computational Scientific Execution Environments for Workflow-based Experiments Using Ontologies</h3>
 <div class="space"> </div>
 <div class="clear"> </div>
-<p>This site contains the experimental materials, as well as their descriptions, associated to the experimental section of the PhD thesis developed by <a href="http://delicias.dia.fi.upm.es/~isantana/">Idafen Santana-Perez</a>.
+           <p>This site contains the experimental materials, as well as their descriptions, associated to the experimental section of the PhD thesis developed by <a href="http://delicias.dia.fi.upm.es/~isantana/">Idafen Santana-Perez</a>.</p>
+           <br>
 
-<br><br>
-<h1>WORK IN PROGRESS</h1>    
-<br>    
-    
+
+
 The content described below is aim to support the claims exposed on it and should not be conisdered as a publication itself.
 <br><br>
 This material is published following the <a href="http://www.researchobject.org/">Research Object</a> specification.
 <br><br>
-<!--
-<i>Last modified: January XX, 2015</i>
+
+<i>Last modified: January 12, 2016</i>
 
 </p>
 </div> 
@@ -70,7 +69,11 @@ This material is published following the <a href="http://www.researchobject.org/
 <div class="space"> </div>
 <div class="clear"> </div>
 <p property="dc:abstract">
-Abstract will be here... </p>
+           
+           <p>The Seismic Ambient Noise Cross-Correlation workflow (also referred as <b>xcorr</b>) was developed as part of the <a href="http://www.verce.eu/">VERCE project</a> for processing and cross-correlating time series (traces) from seismic stations. These traces include many geophysical properties, such as wave velocities or event rates, which have to be processed in nearly real-time for hazard forecasting. 
+
+
+               <br>For more information about this experiment go to the 6.2.2.2 section of the thesis.</p> </p>
 <div class="clear"> </div>
 </div>
 </div>
@@ -81,14 +84,13 @@ Abstract will be here... </p>
 
 In this section we include the files containing the datasets and the scripts used in the experimentation section of the thesis.
 <br><br>
-All these files are included on the <a href="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_Pegasus_Montage/montage.zip">montage.zip</a> bundle. This is the main hierachy of its contents once unzipped:
+All these files are included on the <a href="http://delicias.dia.fi.upm.es/public_html/RO/WICUS/WICUS_dispel4py_xcorr/xcorr.zip">xcorr.zip</a> bundle. This is the main hierachy of its contents once unzipped:
 <br><br>
 <ul>
-<li> <b>Montage:</b> a folder containing the files related to the Montage workflow use case.
+<li> <b>dispel4py_xcorr:</b> a folder containing the files related to the xcorr workflow use case.
 	<ul>
-		<li> &bull; runMontageAws.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on AWS EC2, deploys the necessary software, and executes the Montage workflow.
-		<li> &bull; runMontageFG.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on FutureGrid, deploys the necessary software, and executes the Montage workflow.
-		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the Montage workflow.
+		<li> &bull; runGeoAws.py: a <a href="http://pegasus.isi.edu/precip">Precip</a> file that creates a VM on AWS EC2, deploys the necessary software, and executes the xcorr workflow.
+		<li> &bull; Vagrantfile: a <a href="https://www.vagrantup.com/">Vagrant</a> file that creates a VM on a local Vagrant environment, deploys the necessary software, and executes the xcorr workflow.
 		<li> &bull; annotations: a folder containing the three datasets describing the workflow and its requirements.
 	</ul>
 </ul>
@@ -98,8 +100,8 @@ All these files are included on the <a href="http://delicias.dia.fi.upm.es/publi
 This <i>annotations</i> folder contains the following files:
 
 <ul>
-<li> <b>Workflow Requirements dataset (wfiConf.ttl):</b> this RDF dataset contains the annotations about the requirements of the Montage workflow.
-<li> <b>Software Stacks dataset (swc.ttl):</b> an RDF dataset containing the description of the Software Components necessary for executing the Montage workflow.
+<li> <b>Workflow Requirements dataset (wfiConf.ttl):</b> this RDF dataset contains the annotations about the requirements of the xcorr workflow.
+<li> <b>Software Stacks dataset (swc.ttl):</b> an RDF dataset containing the description of the Software Components necessary for executing the xcorr workflow.
 <li> <b>Scientific Virtual Appliance dataset (sva.owl):</b> an RDF dataset containing the annotations of the  Scientific Virtual Appliances used in this experimentation.
 </ul>
 
@@ -118,10 +120,10 @@ The lastest version of the ISA can be obtained <a href="https://github.com/idafe
     To execute it, follow the instructions included on the site, using the files from the <i>annotations</i> folder of the workflow. The specif parameters of the workflows to be used are:
 <br><br>
 	<ul>
-		<li> &bull; Montage:
+		<li> &bull; xcorr:
 			<ul>
-				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/montage_WF.
-				<li> &bull;  SSH_TYPE=rsa;
+				<li> &bull;  WF_URI=http://purl.org/net/wicus-reqs/resource/Workflow/CrossCorrelation_WF.
+				<li> &bull;  SSH_TYPE=dsa;
 			</ul>
 
 	</ul>
@@ -142,16 +144,10 @@ For executing it the Precip scripts, either the ones provided on the bundle or t
 	<li> &bull; Set the PYTHONPATH environment variable to the decompressed precip folder (e.g. "setenv PYTHONPATH $PWD/precip")</li>
 	<li> &bull; Execute on the python scripts included on the zip file:
 	<ul>
-		<li> &bull; FutureGrid instructions:
-			<ul>
-				<li> &bull; Set the OPENSTACK_URL, OPENSTACK_ACCESS_KEY, and OPENSTACK_SECRET_KEY environment variables, indicating the endpoint URL and the access and secret keys of the user on FutureGrid.</li>
-				<li>  &bull; Execute the corresponding file (e.g. "python precipMontageFG.py")</li>
-			</ul>
-		</li>
 		<li> &bull; AWS inctructions:
 			<ul>
 				<li> &bull; Set the AMAZON_EC2_REGION, AMAZON_EC2_URL, AMAZON_EC2_ACCESS_KEY, and AMAZON_EC2_SECRET_KEY environment variables, indicating the AWS region and AWS endpoint to be used, and the access and secret keys of the user on AWS.</li>
-				<li> &bull; Execute the corresponding file (e.g. "python precipMontageAws.py")</li>
+				<li> &bull; Execute the corresponding file (e.g. "python runGeoAws.py")</li>
 			</ul>
 		</li>
 	</ul>
@@ -186,7 +182,9 @@ For executing the vagrant scripts, once in the correspoing directory on the bund
 <!-- page industries -->	
 <div class="page_content">
 <h4 class="blue">Acknowledgements</h4>
-This material...
+This material is based upon work supported in part by the FPU grant from the Spanish Science and Innovation Ministry (MICINN), and the Ministerio de Economía y Competitividad (Spain) project "4V: Volumen, Velocidad, Variedad y Validez en la Gestión Innovadora de Datos" (TIN2013-46238-C4-2-R). 
+    <br>
+    We would like to thank the dispel4py team for their support.
 <div class="clear"> </div>
 </div> 
 
